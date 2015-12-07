@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save dev-time-cli
+$ npm install --global dev-time-cli
 ```
 
 
