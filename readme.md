@@ -30,6 +30,11 @@ $ dev-time --help
 ```
 
 
+## Related
+
+- [dev-time](https://github.com/SamVerschueren/dev-time) - API for this module
+
+
 ## License
 
 MIT © [Sam Verschueren](http://github.com/SamVerschueren)
