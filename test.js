@@ -3,7 +3,7 @@ import moment from 'moment';
 import execa from 'execa';
 
 test('error', async t => {
-	await t.throws(execa('./cli.js'), 'Expected a user');
+	await t.throws(execa('./cli.js'), 'Provide a GitHub user');
 });
 
 test('result', async t => {
