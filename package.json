@@ -1,0 +1,52 @@
+{
+  "name": "dev-time-cli",
+  "version": "0.0.0",
+  "description": "Get the current local time of a GitHub user.",
+  "license": "MIT",
+  "repository": "SamVerschueren/dev-time-cli",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
+  },
+  "bin": {
+    "dev-time": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "github",
+    "gh",
+    "developer",
+    "dev",
+    "user",
+    "local",
+    "time",
+    "timezone",
+    "date"
+  ],
+  "dependencies": {
+    "dev-time": "^0.1.0",
+    "meow": "^3.6.0",
+    "moment-timezone": "^0.4.1",
+    "update-notifier": "^0.6.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "execa": "^0.1.0",
+    "moment": "^2.10.6",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
