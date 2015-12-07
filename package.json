@@ -35,7 +35,7 @@
     "date"
   ],
   "dependencies": {
-    "dev-time": "^0.1.0",
+    "dev-time": "^0.2.0",
     "meow": "^3.6.0",
     "moment-timezone": "^0.4.1",
     "update-notifier": "^0.6.0"
