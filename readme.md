@@ -16,11 +16,11 @@ $ npm install --save dev-time-cli
 $ dev-time --help
 
   Usage
-    $ dev-time [user]
+    $ dev-time <user>
 
   Options
-    --format The moment format of the output. [Default: DD MMM. YYYY - HH:mm:ss]
-    --token  The GitHub authentication token.
+    --format  The moment format of the output. [Default: DD MMM. YYYY - HH:mm:ss]
+    --token   The GitHub authentication token.
 
   Examples
     $ dev-time SamVerschueren
