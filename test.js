@@ -9,7 +9,7 @@ test('error', async t => {
 test('result', async t => {
 	const {stdout} = await execa('./cli.js', ['SamVerschueren']);
 
-	t.is(stdout, moment().format('DD MMM. YYYY - HH:mm:ss'));
+	t.is(stdout, moment().format('HH:mm - D MMM. YYYY'));
 });
 
 test('formatting', async t => {

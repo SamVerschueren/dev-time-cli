@@ -19,12 +19,15 @@ $ dev-time --help
     $ dev-time <user>
 
   Options
-    --format  The moment format of the output. [Default: DD MMM. YYYY - HH:mm:ss]
-    --token   The GitHub authentication token.
+    --format       The moment format of the output. [Default: HH:mm - D MMM. YYYY]
+    --token        The GitHub authentication token.
+    -v, --verbose  Show UTC offset.
 
   Examples
     $ dev-time SamVerschueren
-    07 Dec. 2015 - 09:14:49
+    19:47 - 8 Dec. 2015
+    $ dev-time SamVerschueren -v
+    19:47 - 8 Dec. 2015 - UTC+1
     $ dev-time SamVerschueren --format DD-MM-YYYY
     07-12-2015
 ```
