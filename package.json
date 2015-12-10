@@ -36,7 +36,7 @@
   ],
   "dependencies": {
     "chalk": "^1.1.1",
-    "dev-time": "^0.3.3",
+    "dev-time": "^0.4.0",
     "elegant-spinner": "^1.0.1",
     "log-symbols": "^1.0.2",
     "log-update": "^1.0.2",
