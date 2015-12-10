@@ -57,8 +57,8 @@ const frames = {};
 cli.input.forEach(user => frames[user] = elegantSpinner());
 
 function parseError(err) {
-	if (/no contributions/.test(err.message)) {
-		return `  ${logSymbols.error} ${chalk.red('error')} ${err.message}`;
+	if (/no contributions/.test(err.message) || /Rate limit exceeded/.test(err.message)) {
+		return `  ${logSymbols.error} ${chalk.red('error')} ${err.message.toLowerCase()}`;
 	}
 
 	return err.stack;
@@ -69,7 +69,7 @@ function render() {
 
 	cli.input.forEach(user => {
 		if (cli.input.length === 1) {
-			output.push(result[user]);
+			output.push(result[user].stack ? parseError(result[user]) : result[user]);
 			return;
 		}
 
