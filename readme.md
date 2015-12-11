@@ -2,6 +2,8 @@
 
 > Get the current local time of a GitHub user.
 
+<img src="screenshot.gif" width="560" />
+
 
 ## Install
 
