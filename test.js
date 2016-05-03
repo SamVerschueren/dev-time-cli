@@ -1,5 +1,5 @@
 import test from 'ava';
-import moment from 'moment';
+import moment from 'moment-timezone';
 import execa from 'execa';
 import stripAnsi from 'strip-ansi';
 
@@ -10,7 +10,7 @@ test('error', async t => {
 test('result', async t => {
 	const {stdout} = await execa('./cli.js', ['SamVerschueren']);
 
-	t.is(stripAnsi(stdout), `${moment().format('HH:mm - D MMM. YYYY')}\n`);
+	t.is(stripAnsi(stdout), `${moment().tz('Europe/Brussels').format('HH:mm - D MMM. YYYY')}\n`);
 });
 
 test('formatting', async t => {
