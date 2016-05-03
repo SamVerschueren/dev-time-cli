@@ -54,7 +54,9 @@ if (cli.input.length === 0) {
 const result = {};
 const frames = {};
 
-cli.input.forEach(user => frames[user] = elegantSpinner());
+cli.input.forEach(user => {
+	frames[user] = elegantSpinner();
+});
 
 function parseError(err) {
 	if (/no contributions/.test(err.message) || /Rate limit exceeded/.test(err.message)) {
@@ -104,7 +106,9 @@ Promise.all(cli.input.map(user =>
 				result[user] += ` - UTC${sign}${date.utcOffset() / 60}`;
 			}
 		})
-		.catch(err => result[user] = err)
+		.catch(err => {
+			result[user] = err;
+		})
 )).then(() => {
 	render();
 	process.exit();
