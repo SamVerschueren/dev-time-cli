@@ -1,6 +1,6 @@
 {
   "name": "dev-time-cli",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "Get the current local time of a GitHub user.",
   "license": "MIT",
   "repository": "SamVerschueren/dev-time-cli",
