@@ -41,8 +41,8 @@
     "log-symbols": "^1.0.2",
     "log-update": "^1.0.2",
     "meow": "^3.6.0",
-    "moment-timezone": "^0.4.1",
-    "update-notifier": "^0.6.0"
+    "moment-timezone": "^0.5.4",
+    "update-notifier": "^1.0.0"
   },
   "devDependencies": {
     "ava": "*",
